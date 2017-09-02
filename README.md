@@ -31,6 +31,13 @@ python main.py
  - `main.py`
  - `project_tests.py`
  - Newest inference images from `runs` folder
- 
+
  ## How to write a README
 A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
+
+### Results and observations
+1. FCN successfully configured and trained on provided dataset (Kitti Road)
+2. Results of test execution commited into "runs/1504389994.8603446" folder
+3. Results obtained after training FCN for 25 epochs with batch size 20. For this batch size training produced good results after 14 epochs. For configurations with smaller batches more epochs were needed (for example same results for batch size 10 reached on 18th epoch).
+4. L2 regularization helped a lot for fighting overfitting. (Thank you for the hint.)
+5. Variation of learning rate influenced results of first couple epochs, but later its influence was not somehow significant
